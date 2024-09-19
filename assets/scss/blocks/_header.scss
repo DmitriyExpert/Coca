@@ -1,0 +1,61 @@
+
+// header
+
+.header__wrapper {
+      max-width: 100%;
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.header__logo-indexroute {
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+}
+
+.header__menu {
+      display: flex;
+      align-items: center;
+      column-gap: 32px;
+}
+
+.header__menu-item {
+      @include bodyMediumMedium; 
+      &:last-child {
+            margin-left: 36px;
+            color: $color-fullblack;
+            @include bodyLargeSemibold;
+            position: relative;
+
+            &::after {
+                  position: absolute;
+                  display: block;
+                  bottom: -6px;
+
+                  content: "";
+                  background-color: $color-fullblack;
+                  height: 1px;
+                  max-width: 100%;
+                  width: 100%;
+            } 
+      }
+      position: relative;
+      &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 1px;
+            max-width: 100%;
+            width: 0%;
+            background-color: $color-fullblack;
+            bottom: -6px;
+            transition: width ease-in .3s;
+      }
+      &:hover::after {
+            width: 100%;
+      }
+}
+
