@@ -1,0 +1,42 @@
+
+// responsive
+
+// 1024px - Laptop => _var.scss - $laptop-size
+
+@media(max-width: $laptop-size) {
+      
+      // header
+
+      .header__menu-item {
+            font-size: 14px;
+            line-height: 18px;
+      }
+
+      .header__menu-item:last-child {
+            font-size: 14px;
+            line-height: 22px;
+      }
+
+}
+
+// 768px - tablet => _var.scss - $tablet-size
+
+
+
+@media(max-width: $tablet-size) {
+      
+      .header__navigation {
+            display: $d-n;
+      }
+
+      .burger__btn {
+            display: $d-f;
+      }
+}
+
+// 425px - mobile => _var.scss - $mobile-size
+
+
+@media(max-width: $mobile-size) {
+      // ...
+}
