@@ -84,8 +84,9 @@ img {
 
 img, svg {
 	max-width: 100%;
-    width: auto;
+      width: auto;
 	height: auto;
+      object-fit: cover;
 }
 
 address {
@@ -143,14 +144,7 @@ body {
     background-color: #fff;
 }
 
-#header {
-    position: absolute;
-    top: 26px;
-    left: 0;
-    right: 0;
-    z-index: 10000;
-    margin: 0 auto;
-}
+
 
 
 .wrapper {
@@ -175,5 +169,9 @@ body {
     max-width: 1240px;
     padding: 0px 20px;
     margin: 0 auto;
+}
+
+.container-posrel {
+      position: relative;
 }
 
