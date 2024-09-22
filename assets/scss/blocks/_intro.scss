@@ -13,7 +13,7 @@
       max-width: 100%;
       width: 100%;
 
-      display: flex;
+      display: $d-f;
       align-items: center;
       justify-content: space-between;
       position: relative;
@@ -50,7 +50,7 @@
 }
 
 .intro__inner {
-      display: flex;
+      display: $d-f;
       flex-direction: column;
       row-gap: 70px;
 
@@ -59,7 +59,7 @@
 }
 
 .intro__textbox {
-      display: flex;
+      display: $d-f;
       flex-direction: column;
       row-gap: 114px;
 }
@@ -72,7 +72,7 @@
 }
 
 .intro__textwithline {
-      display: flex;
+      display: $d-f;
       column-gap: 27px;
 }
 
@@ -99,3 +99,108 @@
       @include heading-four-bold; 
 }
 
+// Intro form
+
+.intro__form {
+      display: $d-f;
+      justify-content: space-between;
+      
+      max-width: 471px;
+      width: 100%;
+
+}
+
+
+.intro__form-email {
+      border-bottom: 1px $neutral-40 solid;
+      max-width: 280px;
+      width: 100%;
+      color: $neutral-60;
+      font-size: 16px;
+      line-height: 150%;
+
+      &::placeholder {
+            color: $neutral-60;
+            font-size: 16px;
+            line-height: 150%;
+      }
+}
+
+
+.intro__btn {
+      max-width: 175px;
+      width: 100%;
+      text-align: center;
+      padding: 14px 42px;
+      border: solid 2px $btn-back;
+      @include bodyLargeBold;
+      transition: all .3s ease;
+      &:hover {
+            background-color: $neutral-10;
+            color: $btn-back;
+      }
+}
+
+
+// intro stats bord
+
+
+.intro__statswrapper {
+      display: $d-f;
+      flex-direction: column;
+      row-gap: 29px;
+}
+
+.intro__statsbord {
+      max-width: 100%;
+      width: 100%;
+      background-color: $color-fullblack;
+
+      border-radius: 8px;
+      padding: 20px 29px;
+      color: $neutral-10;
+
+      display: $d-f;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.intro__statsbord--item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+}
+
+.statsbord__elementname {
+      @include bodyMediumSemibold;
+      color: $statsbord-namecolor;
+}
+
+.statsbord__price {
+      font-weight: $fw-700;
+      font-size: 20px;
+      line-height: 26px;
+}
+
+.statsbord__otherinfo {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+}
+
+.statsbord__otherinfo--proc {
+      @include bodyMediumSemibold;
+
+      &.proc-up {
+            color: $statsbord-proccolorup;
+      }
+      &.proc-down {
+            color: $statsbord-proccolordown;
+      }
+}
+
+.statsbord__otherinfo--year {
+      line-height: 22px;
+      letter-spacing: -0.5px;
+      color: $statsbord-namecolor;
+}

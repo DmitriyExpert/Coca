@@ -5,13 +5,13 @@
 @mixin heading-one-bold {
       font-size: 64px;
       line-height: 72px;
-      font-weight: 700;
+      font-weight: $fw-700;
 }
 
 @mixin heading-four-bold {
       font-size: 32px;
       line-height: 40px;
-      font-weight: 700;
+      font-weight: $fw-700;
       color: $neutral-100;
 }
 
@@ -27,10 +27,22 @@
       font-weight: 500;
 }
 
+@mixin bodyMediumSemibold {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: $fw-600;
+}
+
 // body Large
 
 @mixin bodyLargeSemibold {
       font-size: 16px;
       line-height: 24px;
-      font-weight: 600;
+      font-weight: $fw-600;
+}
+
+@mixin bodyLargeBold {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: $fw-700;
 }
