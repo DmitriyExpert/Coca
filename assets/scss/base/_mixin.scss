@@ -13,8 +13,8 @@
 // h2
 
 @mixin heading-two-semibold {
-      font-size: 48px;
-      line-height: 56px;
+      font-size: 56px;
+      line-height: 120%;
       font-weight: $fw-600;
 }
 
@@ -44,6 +44,12 @@
 
 
 // h6
+
+@mixin heading-six-medium {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: $fw-500;
+}
 
 @mixin heading-six-semibold {
       font-size: 18px;

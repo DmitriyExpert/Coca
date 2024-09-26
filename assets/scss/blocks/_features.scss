@@ -1,0 +1,184 @@
+// Features
+
+.section__features {
+      padding: 160px 0px 94px 0px;
+}
+
+.features__wrapper {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      column-gap: 58px;
+}
+
+.features__column--textcontent {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+}
+
+
+.features__column {
+      flex: 1 1 0;
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+
+      
+}
+
+// statisticblock
+
+.features__statisticblock {
+      background-color: $neutral-10;
+      padding: 17px 17px;
+
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      z-index: 10000;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 19px;
+
+      max-width: 290px;
+      width: 100%;
+}
+
+.statisticblock__titlebox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 20px;
+}
+
+.statisticblock__title {
+      color: $neutral-100;
+      @include bodyLargeSemibold;
+}
+
+.statisticblock__menuaction {
+      cursor: pointer;
+}
+
+.statisticblock__content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 23px;
+}
+
+.statisticblock__content--inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 26px;
+}
+
+.statisticblock__line {
+      background-color: $neutral-30;
+      height: 1px;
+      max-width: 100%;
+      width: 100%;
+}
+
+.statscontent__barblock {
+      display: flex;
+      column-gap: 12px;
+}
+
+.bar--item {
+      height: 5px;
+      background-color: $primary-hover;
+      width: 8px;
+      border-radius: 15px;
+}
+
+.statscontent__textbox {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+}
+
+.statscontent__textbox--total {
+      color: $neutral-60;
+      font-weight: $fw-500;
+      font-size: 10px;
+      line-height: 150%;
+}
+
+.statscontent__textbox--progressbox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.progressbox__value {
+      font-weight: $fw-700;
+      font-size: 23px;
+      line-height: 120%;
+      color: $neutral-100;
+}
+
+.progressbox__procstats {
+      display: flex;
+      align-items: center;
+      column-gap: 3px;
+}
+
+.progressbox__procvalue {
+      color: $neutral-100;
+      font-weight: $fw-500;
+      font-size: 10px;
+      line-height: 150%;
+}
+
+.statscontent__textbox--comment {
+      color: $neutral-60;
+      font-weight: $fw-400;
+      font-size: 9px;
+      line-height: 120%;
+      & span {
+            font-weight: $fw-700;
+      }
+}
+
+// features text content
+
+.section__titlewrapper-features {
+      & .section__title {
+            color: $neutral-100;
+            max-width: 500px;
+            width: 100%;
+      }
+
+      & .section__subtitle {
+            max-width: 350px;
+            width: 100%;
+      }
+}
+
+.features__itembox {
+      display: flex;
+      flex-direction: column;
+      row-gap: 32px;
+}
+
+.features__item {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+}
+
+.features__item--title {
+      @include heading-six-medium;
+      max-width: 347px;
+      width: 100%;
+      color: $neutral-100;
+}
+
