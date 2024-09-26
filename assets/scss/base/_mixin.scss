@@ -2,11 +2,23 @@
 
 // Heading
 
+// h1
+
 @mixin heading-one-bold {
       font-size: 64px;
       line-height: 72px;
       font-weight: $fw-700;
 }
+
+// h2
+
+@mixin heading-two-semibold {
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: $fw-600;
+}
+
+// h4
 
 @mixin heading-four-bold {
       font-size: 32px;
@@ -16,13 +28,38 @@
 }
 
 
+@mixin heading-four-semibold {
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: $fw-600;
+}
+
+// h5
+
+@mixin heading-five-semibold {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: $fw-600;
+}
+
+
+// h6
+
+@mixin heading-six-semibold {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: $fw-600;
+}
+
+
+
 
 // body
 
 // body Medium
 
 @mixin bodyMediumMedium {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 20px;
       font-weight: 500;
 }
@@ -31,6 +68,12 @@
       font-size: 14px;
       line-height: 20px;
       font-weight: $fw-600;
+}
+
+@mixin bodyMediumRegular {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: $fw-400;
 }
 
 // body Large
@@ -45,4 +88,10 @@
       font-size: 16px;
       line-height: 24px;
       font-weight: $fw-700;
+}
+
+@mixin bodyLargeMedium {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: $fw-500;
 }

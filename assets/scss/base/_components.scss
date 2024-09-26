@@ -29,3 +29,23 @@
       }
 }
 
+// section titles
+
+.section__titlewrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+}
+
+.section__title {
+      @include heading-two-semibold;
+}
+
+.section__subtitle {
+      font-size: 18px;
+      font-weight: $fw-500;
+      line-height: 150%;
+      color: $neutral-60;
+}
+
+

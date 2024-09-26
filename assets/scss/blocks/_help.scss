@@ -1,0 +1,60 @@
+
+
+// help
+
+.section__help {
+      padding: 100px 0px;
+      background-color: $neutral-100;
+      color: $neutral-10;
+}
+
+
+.section__titlewrapper-help {
+      max-width: 730px;
+      width: 100%;
+
+      & .section__subtitle {
+            max-width: 630px;
+            width: 100%;
+      }
+}
+
+
+.help__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      max-width: 100%;
+      width: 100%;
+      flex-wrap: wrap;
+      column-gap: 20px;
+}
+
+.help__column {
+      display: flex;
+      flex-direction: column;
+      row-gap: 56px;
+}
+
+.help__card {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      max-width: 433px;
+      width: 100%;
+
+      text-align: left
+}
+
+.help__card--title {
+      @include heading-four-semibold;
+      color: $neutral-10;
+      max-width: 264px;
+      width: 100%;
+}
+
+.help__card--subtitle {
+      @include bodyLargeMedium;
+      color: $neutral-60;
+}

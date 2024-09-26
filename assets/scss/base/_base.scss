@@ -6,3 +6,12 @@
       background-color: $btn-back;
       border-radius: 50px;
 }
+
+// Container
+
+.df-container--80 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 80px;
+}
+

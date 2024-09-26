@@ -5,6 +5,18 @@
 
 @media(max-width: $laptop-size) {
       
+      // section
+
+      .section__title {
+            font-size: 38px;
+            line-height: 46px;
+      }
+
+      .section__subtitle {
+            font-size: 16px;
+            line-height: 140%;
+      }
+      
       // header
 
       .header__menu-item {
@@ -36,12 +48,35 @@
             font-size: 26px;
       }
 
+      // help
+
+      .help__card--icon {
+            height: 38px;
+            width: 38px;
+      }
+
+      .help__card--title {
+            font-size: 28px;
+            line-height: 36px;
+      }
+
+      .help__card--subtitle {
+            font-size: 14px;
+            line-height: 22px;
+      }
+
+
+      
+
 }
 
 // 992px - large => _var.scss - $large-size
 
 @media(max-width: $large-size) {
 
+      // section
+
+      
       // Intro
 
       .intro__title {
@@ -84,6 +119,14 @@
       .statsbord__otherinfo--year {
             font-size: 12px;
       }
+
+      // help 
+
+      .help__wrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+      }
 }
 
 // 768px - tablet => _var.scss - $tablet-size
@@ -91,6 +134,8 @@
 
 
 @media(max-width: $tablet-size) {
+
+      
       
       .header__navigation {
             display: $d-n;
@@ -142,6 +187,30 @@
 
 
 @media(max-width: $mobile-size) {
+
+      // section 
+
+      .df-container--80  {
+            row-gap: 32px;
+      }
+
+      .section__help {
+            padding: 40px 0px
+      }
+
+      .section__title {
+            @include heading-five-semibold;
+      }
+
+      .section__subtitle {
+            @include bodyMediumMedium;
+      }
+
+      .section__titlewrapper {
+            row-gap: 16px;
+      }
+
+
       // Intro
 
       .section__intro {
@@ -218,5 +287,28 @@
 
       .statsbord__otherinfo--year {
             font-size: 11px;
+      }
+
+      // help
+
+      .help__column {
+            row-gap: 24px;
+      }
+
+      .help__card {
+            row-gap: 16px;
+      }
+
+      .help__card--icon {
+            width: 24px;
+            height: 24px;
+      }
+
+      .help__card--title {
+            @include heading-six-semibold;
+      }
+
+      .help__card--subtitle {
+            @include bodyMediumRegular;
       }
 }
