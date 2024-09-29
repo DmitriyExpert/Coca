@@ -18,6 +18,12 @@
       font-weight: $fw-600;
 }
 
+@mixin heading-two-medium {
+      font-weight: $fw-500;
+      font-size: 64px;
+      line-height: 120%;
+}
+
 // h4
 
 @mixin heading-four-bold {
@@ -83,6 +89,12 @@
 }
 
 // body Large
+
+@mixin bodyLargeRegular {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: $fw-400;
+}
 
 @mixin bodyLargeSemibold {
       font-size: 16px;

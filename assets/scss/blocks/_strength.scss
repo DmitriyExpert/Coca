@@ -1,0 +1,68 @@
+// Strength section parametrs
+
+.section__strength {
+      padding: 66px 0px 160px 0px;
+}
+
+// stength cards
+
+.strength__wrapper {
+      max-width: 100%;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 80px;
+}
+
+.strength__statcards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+
+.strength__statcards--item {
+      padding: 0px 72px;
+      border-left: 1px solid $neutral-40;
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+}
+
+.strength__statcards--cardstart {
+      padding: 0px 72px 0px 0px;
+      border: none;
+}
+
+.strength__statcards--title {
+      @include heading-two-medium;
+      color: $neutral-100;
+}
+
+.strength__statcards--subtitle {
+      @include heading-six-medium;
+      color: $neutral-60;
+}
+
+
+
+
+
+// Strength section title
+
+.strength__sectiontitle--wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      & .section__title {
+            max-width: 635px;
+            width: 100%;
+      }
+
+      & .section__subtitle {
+            max-width: 390px;
+            width: 100%;
+      }
+}
+

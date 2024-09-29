@@ -66,6 +66,21 @@
       }
 
 
+      // strength
+
+      .strength__wrapper  {
+            row-gap: 60px;
+      }
+
+      .strength__statcards--title {
+            font-size: 52px;
+      }
+
+      .strength__statcards--subtitle {
+            font-size: 16px;
+            line-height: 22px;
+      }
+
       
 
 }
@@ -76,6 +91,15 @@
 
       // section
 
+      .section__title {
+            font-size: 28px;
+            line-height: 36px;
+      }
+
+      .section__subtitle {
+            font-size: 14px;
+            line-height: 120%;
+      }
       
       // Intro
 
@@ -134,17 +158,7 @@
             column-gap: 30px;
       }
 
-      .section__titlewrapper-features {
-            & .section__title {
-                  font-size: 28px;
-                  line-height: 36px;
-            }
-
-            & .section__subtitle {
-                  font-size: 14px;
-                  line-height: 120%;
-            }
-      }
+      
 
       .features__item--title {
             font-size: 16px;
@@ -153,6 +167,31 @@
 
       .section__features {
             padding: 110px 0px 75px 0px;
+      }
+
+
+      
+      // strength
+
+      .strength__statcards--item {
+            padding: 0px 36px;
+      }
+
+      .strength__statcards--cardstart {
+            padding: 0px 36px 0px 0px;
+      }
+
+      .strength__statcards--title {
+            font-size: 42px;
+      }
+
+      .strength__statcards--subtitle {
+            font-size: 16px;
+            line-height: 22px;
+      }
+
+      .strength__sectiontitle--wrapper {
+            column-gap: 30px;
       }
 
       
@@ -235,6 +274,31 @@
       .features__column--textcontent {
             row-gap: 23px;
       }
+
+      // strength 
+
+      .section__strength {
+            padding: 30px 0px 100px 0px;
+      }
+
+      .strength__statcards {
+            flex-wrap: wrap;
+            row-gap: 50px;
+            column-gap: 50px;
+            justify-content: center;
+      }
+
+      .strength__statcards--item {
+            border: none;
+            padding: 0px;
+            max-width: 160px;
+      }
+
+      .strength__statcards--subtitle {
+            font-size: 14px;
+      }
+
+      
 }
 
 // 425px - mobile => _var.scss - $mobile-size
@@ -259,6 +323,12 @@
       .section__subtitle {
             @include bodyMediumMedium;
       }
+
+      .section {
+            padding: 40px 0px;
+      }
+
+      
 
       .section__titlewrapper {
             row-gap: 16px;
@@ -368,9 +438,6 @@
 
       // features
 
-      .section__features {
-            padding: 75px 0px 75px 0px;
-      }
 
       .features__statisticblock {
             padding: 15px;
@@ -427,15 +494,7 @@
             height: 10px;
       }
 
-      .section__titlewrapper-features {
-            & .section__title {
-                  @include heading-five-semibold;
-            }
-
-            & .secrion__subtitle {
-                  @include bodyMediumMedium;
-            }
-      }
+      
 
       .features__itembox {
             row-gap: 16px
@@ -444,5 +503,45 @@
       .features__item--title {
             @include bodyMediumMedium;
       } 
+
+
+      // strength
+
+      .strength__wrapper {
+            row-gap: 40px;
+      }
+
+      .strength__statcards {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            &--cardstart {
+                  border-top: solid 1px $neutral-40; 
+                  padding-top: 20px;
+            }
+
+      }
+
+      .strength__statcards--item {
+            &:last-child {
+                  border-bottom: solid 1px $neutral-40;
+                  padding-bottom: 20px
+            }
+      }
+
+      .strength__statcards--title{
+            @include heading-four-semibold;
+      }
+
+      .strength__statcards--subtitle {
+            @include bodyLargeRegular;
+      }
+      
+      .strength__sectiontitle--wrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+      }
+
 
 }

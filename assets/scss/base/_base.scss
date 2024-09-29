@@ -15,3 +15,18 @@
       row-gap: 80px;
 }
 
+// section__title
+
+.section__title {
+      @include heading-two-semibold;
+      color: $neutral-100;
+}
+
+.section__subtitle {
+      @include heading-six-medium;
+      color: $neutral-60;
+}
+
+// Other classess
+
+
