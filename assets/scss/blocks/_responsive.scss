@@ -81,7 +81,12 @@
             line-height: 22px;
       }
 
-      
+      // partners
+
+
+      .partners__content {
+            justify-content: space-evenly;
+      }
 
 }
 
@@ -194,6 +199,9 @@
             column-gap: 30px;
       }
 
+
+      // partners
+
       
 }
 
@@ -297,6 +305,39 @@
       .strength__statcards--subtitle {
             font-size: 14px;
       }
+
+      // partners
+
+      //partners section
+      
+      .section__partners {
+            padding: 30px 0px 100px 0px;
+      }
+
+      // partners section title
+
+
+      .partners__sectiontitle--wrapper {
+            max-width: 100%;
+            & .section__subtitle {
+                  max-width: 231px;
+            }
+      }
+      
+      // partners content
+
+
+      .partners__wrapper {
+            flex-direction: column;
+            row-gap: 60px;
+      }
+
+      .partners__content {
+            justify-content: left;
+            column-gap: 50px;
+      }
+
+      
 
       
 }

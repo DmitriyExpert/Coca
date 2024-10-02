@@ -1,0 +1,71 @@
+
+// Services section
+
+.section__services {
+      padding: 160px 0px 60px 0px;
+}
+
+
+// Services titile
+
+.services__sectiontitle--wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+
+      & .section__title {
+            max-width: 601px;
+      }
+
+      & .section__subtitle {
+            max-width: 462px;
+      }
+}
+
+// Services content
+
+.services__wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 80px;
+
+      max-width: 100%;
+      width: 100%;
+}
+
+.services__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 64px;
+}
+
+.services__column {
+      display: flex;
+      flex-direction: column;
+      row-gap: 56px;
+}
+
+.services__item {
+      display: flex;
+      align-items: center;
+      column-gap: 60px;
+      max-width: 568px;
+      width: 100%;
+} 
+
+.services__item--textbox {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+}
+
+.services__item--title {
+      @include heading-four-semibold;
+      color: $neutral-100;
+}
+
+.services__item--subtitle {
+      @include bodyLargeMedium;
+      color: $neutral-60;
+}
