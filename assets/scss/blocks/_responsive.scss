@@ -88,6 +88,32 @@
             justify-content: space-evenly;
       }
 
+      // service 
+
+      .section__services {
+            padding: 100px 0px 60px 0px;
+      }
+
+      .services__wrapper {
+            row-gap: 60px;
+      }
+
+      .services__content {
+            column-gap: 20px;
+      }
+
+      .services__item {
+            column-gap: 30px;
+      }
+
+      .services__item--title {
+            font-size: 24px;
+      }
+
+      .services__item--subtitle {
+            font-size: 14px;
+      }
+
 }
 
 // 992px - large => _var.scss - $large-size
@@ -200,8 +226,26 @@
       }
 
 
-      // partners
+      // service
 
+      .services__item--title {
+            font-size: 20px;
+            line-height: 25px;
+      }
+
+      .services__item--textbox {
+            row-gap: 18px;
+      }
+
+
+
+      @media(max-width: 900px) {
+            .services__content {
+                  flex-wrap: wrap;
+            }
+
+
+      }
       
 }
 
@@ -585,4 +629,59 @@
       }
 
 
+      // service
+
+
+      .services__content {
+            justify-content: center;
+            row-gap: 24px;
+      }
+
+      .services__wrapper {
+            row-gap: 32px;
+      }
+
+      .services__item {
+            column-gap: 16px;
+      }
+
+      .services__item--textbox {
+            max-width: 159px;
+            row-gap: 8px;
+      }
+
+      .services__item--title {
+            @include bodyLargeSemibold;
+      }
+      .services__item--subtitle {
+            @include bodyMediumRegular;
+      }
+
+      .services__mainimg {
+            max-width: 160px;
+            height: 216px;
+      }
+
+      .services__column {
+            row-gap: 24px;
+      }
+
+      @media(max-width: 375px) {
+
+            .services__content {
+                  justify-content: start;
+            }
+            .services__item {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  row-gap: 12px;
+                  max-width: 300px;
+                  width: 100%;
+            }
+
+            .services__item--textbox {
+                  max-width: 100%;
+            }
+      }
 }
