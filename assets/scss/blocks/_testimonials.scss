@@ -1,0 +1,133 @@
+// TESTIMONIALS
+
+.section__testimonials{
+      padding: 69px 0px 160px 0px;
+
+      & .container {
+            overflow: hidden;
+      }
+}
+
+.testimonials__wrapper {
+      max-width: 100%;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 48px;
+}
+
+.testimonials__sectiontitle--wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 20px;
+      & .section__title {
+            max-width: 530px;
+            width: 100%;
+      }
+
+      & .section__subtitle {
+            max-width: 376px;
+            width: 100%;
+      }
+}
+
+.testimonials__content {
+      display: flex;
+      flex-direction: row;
+      
+}
+
+.testimonials__comment{
+      
+      flex: 0 0 100%;
+      max-width: 100%;
+      
+      padding: 64px 0px 0px calc(42px + 115px);
+      position: relative;
+}
+
+.testimonials__quotes {
+      position: absolute;
+      left: 0;
+      top: 0;
+}
+
+.comment__wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+}
+
+.comment__textbox {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      max-width: 898px;
+}
+
+.comment__stars {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+}
+
+.comment__stars-value {
+      @include bodyLargeMedium;
+}
+
+.comment__title {
+      @include heading-three-medium;
+}
+
+.comment__manipulation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.manipulation__peoplebox {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+}
+
+.peoplebox__text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+}
+
+.peoplebox__name {
+      @include heading-six-semibold;
+}
+
+.peoplebox__subname {
+      @include bodyLargeMedium;
+      color: $neutral-60;
+}
+
+
+.manipulation__arrowbox {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+
+}
+
+.manipulation__arrow {
+      cursor: pointer;
+      padding: 16px;
+      background-color: $neutral-10;
+      border: 1px solid $neutral-40;
+      border-radius: 50px;
+      color: $neutral-40;
+      font-size: 20px;
+      transition: all .3s ease;
+      &:hover {
+            color: $neutral-10;
+            background-color: $neutral-100;
+            border-color: $neutral-100;
+      }
+}

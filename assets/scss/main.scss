@@ -8,7 +8,7 @@
 @import '../scss/base/var';
 @import '../scss/base/mixin';
 @import '../scss/base/reset';
-@import '../scss/base/base';
+
 
 
 // blocks
@@ -19,8 +19,10 @@
 @import '../scss/blocks/strength';
 @import '../scss/blocks/partners';
 @import '../scss/blocks/services';
+@import '../scss/blocks/insight';
+@import '../scss/blocks/testimonials';
 
-
+@import '../scss/base/base';
 
 
 @import '../scss/base/components';

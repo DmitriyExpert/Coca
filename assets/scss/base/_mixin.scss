@@ -24,6 +24,14 @@
       line-height: 120%;
 }
 
+// h3
+
+@mixin heading-three-medium {
+      font-weight: $fw-500;
+      font-size: 40px;
+      line-height: 130%;
+}
+
 // h4
 
 @mixin heading-four-bold {
@@ -112,4 +120,11 @@
       font-size: 16px;
       line-height: 24px;
       font-weight: $fw-500;
+}
+
+
+// other
+
+@mixin d-n {
+      display: none;
 }

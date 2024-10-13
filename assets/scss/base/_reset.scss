@@ -151,6 +151,7 @@ body {
     flex-direction: column;
     min-height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .main{
@@ -173,4 +174,6 @@ body {
 .container-posrel {
       position: relative;
 }
+
+
 

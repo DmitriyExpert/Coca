@@ -54,6 +54,30 @@
       width: 100%;
 } 
 
+.services__item--imgbox{
+      position: relative;
+}
+
+.services__mainimg {
+      max-width: 240px;
+}
+
+.services__item--imgicon {
+      position: absolute;
+      padding: 16px;
+      z-index: 1000;
+      background-color: #161A34;
+      border-radius: 50px;
+      opacity: 0.6;
+      top: 12px;
+      right: 12px;
+}
+
+// insig
+
+
+
+
 .services__item--textbox {
       display: flex;
       flex-direction: column;
